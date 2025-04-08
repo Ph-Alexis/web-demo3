@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Quần Áo Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container navbar-logo">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/892/892458.png"
+            alt="Logo Shop"
+          />
+          <h1 class="logo">ShopQuanao</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="sanpham.html">Sản phẩm</a>
+          <a href="loai.html">Loại sản phẩm</a>
+          <a href="lienhe.html">Liên hệ</a>
+        </div>
+        <input type="text" placeholder="Tìm kiếm..." id="searchBox" />
+        <div class="cart">🛒 <span id="cart-count">0</span></div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Thêm hình ảnh banner quảng cáo -->
+      <section class="hero">
+        <img
+          src="https://i.pinimg.com/736x/df/86/8c/df868ce45ed6b04e68b2e1a7b122dbd0.jpg"
+          alt="Banner quảng cáo"
+          class="hero-image"
+        />
+      </section>
+
+      <section class="filters">
+        <select id="price-filter">
+          <option value="all">Tất cả giá</option>
+          <option value="low">Dưới 300k</option>
+          <option value="high">Trên 300k</option>
+        </select>
+      </section>
+
+      <section id="product-list" class="product-list">
+        <!-- Sản phẩm sẽ được hiển thị ở đây bằng JavaScript -->
+      </section>
+
+      <section class="pagination">
+        <button id="prev-page">Trang trước</button>
+        <span id="page-number">1</span>
+        <button id="next-page">Trang sau</button>
+      </section>
+    </main>
+
+    <footer id="lienhe">
+      <p>&copy; 2025 ShopQuanao - Liên hệ: info@shopquanao.vn</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ - Shop Quần Áo Online</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container navbar-logo">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/892/892458.png"
+            alt="Logo Shop"
+          />
+          <h1 class="logo">ShopQuanao</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="sanpham.html">Sản phẩm</a>
+          <a href="#loai">Loại sản phẩm</a>
+          <a href="lienhe.html">Liên hệ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2>Liên hệ với chúng tôi</h2>
+
+      <!-- Thêm hình ảnh hỗ trợ liên hệ -->
+      <section class="contact-image">
+        <img
+          src="https://img3.thuthuatphanmem.vn/uploads/2019/09/30/logo-shop-quan-ao-nam_111916701.jpg"
+          alt="Hỗ trợ khách hàng"
+        />
+      </section>
+
+      <form
+        action="mailto:info@shopquanao.vn"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email của bạn:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Lời nhắn:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ShopQuanao - Liên hệ: info@shopquanao.vn</p>
+    </footer>
+  </body>
+</html>
